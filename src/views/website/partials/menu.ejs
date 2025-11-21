@@ -1,0 +1,70 @@
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo me-auto" style="position: relative; bottom: 5px;">
+        <h1 class="text-light" style="font-family: 'Oswald';"><a href="index.html" style="font-size: 25px;"><span>A.U.S.G.</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="/static/assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="<%= activePage === 'home' ? 'active' : '' %>"><a href="/">Home</a></li>
+          <li class="<%= activePage === 'about' ? 'active' : '' %>"><a href="/about">About</a></li>
+          <li class="<%= (activePage.includes('hor') || activePage.includes('council')) ? 'active' : '' %> drop-down"><a href="">Elected Reps</a>
+            <ul>
+                <li class="<%= activePage === 'council' ? 'active' : '' %>"><a href="/council">Council</a></li>
+                <li class="<%= activePage === 'hor-about' ? 'active' : '' %>"><a href="/hor/about">HoR About</a></li>
+                <!-- <li class="<%= activePage === 'hor-work' ? 'active' : '' %>"><a href="/hor/work">Work</a></li> -->
+                <li class="<%= activePage === 'hor-committees' ? 'active' : '' %>"><a href="/hor/committees">HoR Committees</a></li>
+            </ul>
+          </li>
+          <li class="<%= activePage.includes('cabinet') ? 'active' : '' %> drop-down"><a href="">Cabinet</a>
+            <ul>
+                <li class="<%= activePage === 'cabinet-about' ? 'active' : '' %>"><a href="/cabinet/about">About</a></li>
+                <li class="<%= activePage === 'cabinet-culmin' ? 'active' : '' %>"><a href="/cabinet/culmin">Jazbaa</a></li>
+                <li class="<%= activePage === 'cabinet-techmin' ? 'active' : '' %>"><a href="/cabinet/techmin">Technology Ministry</a></li>
+                <li class="<%= activePage === 'cabinet-maa' ? 'active' : '' %>"><a href="/cabinet/maa">Ministry of Academic Affairs</a></li>
+                <!-- <li class="<%= activePage === 'cabinet-mpa' ? 'active' : '' %>"><a href="/cabinet/mpa">Ministry of Parliamentary Affairs</a></li> -->
+                <li class="<%= activePage === 'cabinet-envmin' ? 'active' : '' %>"><a href="/cabinet/envmin">Environment Ministry</a></li>
+                <li class="<%= activePage === 'cabinet-mcwb' ? 'active' : '' %>"><a href="/cabinet/mcwb">Ministry of Community and Well Being</a></li>
+                <li class="<%= activePage === 'cabinet-clm' ? 'active' : '' %>"><a href="/cabinet/clm">Campus Life Ministry</a></li>
+                <!-- <li class="<%= activePage === 'cabinet-finance' ? 'active' : '' %>"><a href="/cabinet/finance">Finance Ministry</a></li> -->
+                <li class="<%= activePage === 'cabinet-sport' ? 'active' : '' %>"><a href="/cabinet/sport">Sports Ministry</a></li>
+            </ul>
+          </li>
+          <!-- <li class="drop-down"><a href="">Documents</a>
+            <ul>
+                <li><a href="#">Governing Documents</a></li>
+                <li><a href="#">Meeting Records</a></li>
+                <li><a href="#">Financial Records</a></li>
+            </ul>
+          </li> -->
+          <li class="<%= activePage.includes('resources') ? 'active' : '' %> drop-down"><a href="">Resources</a>
+            <ul>
+                <!-- <li class="<%= activePage === 'resources-amenities' ? 'active' : '' %>"><a href="/resources/amenities">Amenities</a></li> -->
+                <!-- <li class="<%= activePage === 'resources-food' ? 'active' : '' %>"><a href="/resources/food">Food</a></li> -->
+                <!-- <li class="<%= activePage === 'resources-health' ? 'active' : '' %>"><a href="/resources/health">Health</a></li> -->
+                <li class="<%= activePage === 'resources-helpful-resources' ? 'active' : '' %>"><a href="/resources/helpful-resources">Helpful Resources</a></li>
+                <li class="<%= activePage === 'resources-aura' ? 'active' : '' %>"><a href="/resources/aura">AURA</a></li>
+            </ul>
+          </li>
+          <li><a target="_blank" href="https://ashoka.edu.in">AU Website</a></li>
+          <!-- <li><a href="https://calendly.com/sg--exk/office-hours-with-sg">Book OH with SG</a></li> -->
+          <li><button style="border-color: #87281b; padding: 6.5px 7px; margin-left: 25px; color: #87281b; font-size: 14px; animation: shimmer 2s infinite;" class="shimmer-button" onclick="window.location.href='https://sg.ashoka.edu.in/platform'">Go to Platform</button></li>
+          
+          <!-- <li class="get-started"><a href="#about"><i class="fa fa-search"></i></a></li> -->
+        </ul>
+        <!-- <div class="search-container"> -->
+          <!-- <form action="/search" method="get">
+            <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+            <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+          </form> -->
+          <!-- <button class="btn btn-primary btn-sm" onclick="window.location.href='/platform'">Platform</button> -->
+        <!-- </div> -->
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->

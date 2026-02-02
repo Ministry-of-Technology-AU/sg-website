@@ -16,6 +16,9 @@ const websiteRoutes = require("./routes/websiteRoutes.js");
 // Set view engine to EJS
 app.set("view engine", "ejs");
 
+// Set the views directory
+app.set("views", path.join(__dirname, "views"));
+
 // Serve static files from the "public" directory
 app.use(
   "/",
